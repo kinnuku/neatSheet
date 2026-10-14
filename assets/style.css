@@ -235,7 +235,8 @@ body.is-home .sidebar { display: none; }
 .md p, .md ul, .md ol { margin: .7em 0; }
 .md li { margin: .25em 0; }
 .md li::marker { color: var(--cat); }
-.md strong { font-weight: 700; color: var(--ink); }
+.md strong, .md b { font-weight: 900; color: var(--ink); background: linear-gradient(transparent 60%, color-mix(in srgb, var(--cat) 16%, transparent) 60%); padding: 0 1px; }
+.md td strong, .md th strong { background: none; }
 .md hr { border: 0; border-top: 1px solid var(--line); margin: 2.6em 0; }
 .md img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; display: block; margin: 1.2em 0; }
 .md :not(pre) > code {
